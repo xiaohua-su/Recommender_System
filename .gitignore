@@ -1,0 +1,8 @@
+.idea
+.ipynb_checkpoints
+.DS_Store
+__pycache__
+*.db
+*.pytest_cache
+.gitattributes
+ .ipynb_checkpoints/Juypter Notebook-checkpoint.ipynb
