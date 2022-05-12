@@ -41,36 +41,36 @@ The data was gathered from **GroupLens.org** where the information within this d
 
 The dataset has over **100,000 movie ratings** given by **610 different users** for about **9700 movies**. Each user had reviewed *aleast* **20 different movies**.  However, due to time constraints, our model was built off of **100,000 movie ratings** versus the **1.9 million** ratings that were available in the original dataset.
 
-`Surprise` was the main library we used to produce our *collaborative filtering model*.This library has endogenous methods of splitting our data set, cross validating, performing grid searches as well various different algorithms that can be used to build recommendation systems. 
+**Surprise** was the main library we used to produce our *collaborative filtering model*.This library has endogenous methods of splitting our data set, cross validating, performing grid searches as well various different algorithms that can be used to build recommendation systems. 
 
-As you go through this notebook, you will see that we had to use a combination of both surprise and `scikit-learn` methods to ensure the successful deployment of model. Since the syntax of `surprise` and `sklearn` are similar, this made this process much more efficient. This also ensures that the notebook would be readable to anyone with a background in *data science*. We mainly utilized `surprise` to transform the data set to a suitable data format that can be used in *recommendation systems*. We also employed `pickling` to make loading onto any new computer an easier process. 
+As you go through this notebook, you will see that we had to use a combination of both surprise and **scikit-learn** methods to ensure the successful deployment of model. Since the syntax of surprise and sklearn are similar, this made this process much more efficient. This also ensures that the notebook would be readable to anyone with a background in *data science*. We mainly utilized surprise to transform the data set to a suitable data format that can be used in *recommendation systems*. We also employed **pickling** to make loading onto any new computer an easier process. 
 
 ## Methods
 
-The first step in our **iterative modeling process** is to create and test a `dummy model`, which will act as our `base line RSME (root mean squared error) score` that we compare to when judging the **validity** and **performance** of our future models.  
+The first step in our **iterative modeling process** is to create and test a `dummy_model`, which will act as our **base line RSME (root mean squared error) score** that we compare to when judging the **validity** and **performance** of our future models.  
 
-- 'Base line model' RMSE score is: **1.425**
+- Baseline model RMSE score is: **1.425**
 
-We performed a `GridSearch` until the `hyper-parameters` were tuned to what is considered the **optimal amount**.
+We performed a `GridSearch` until the hyper-parameters were tuned to what is considered the **optimal amount**.
 
-Next we used the `k-nearest neighbors` (KNN) algorithm, which is a *simple*, *supervised machine learning* algorithm that can be used to solve both `classification` and `regression` problems. In this case, we are using it as the basis for our `recommendation system`. The premise is that the rating of movies *unseen* by the user will be **predicted** using *ratings of similar users*. In this case, the nearest "neighbors".
+Next we used the **k-nearest neighbors (KNN) algorithm**, which is a *simple*, *supervised machine learning* algorithm that can be used to solve both *classification* and *regression* problems. In this case, we are using it as the basis for our recommendation system. The premise is that the rating of movies *unseen* by the user will be **predicted** using *ratings of similar users*. In this case, the nearest "neighbors".
 
-- 'KNN model' RMSE score is: **0.952**
+- KNN model RMSE score is: **0.952**
 
-After defining our `baseline model` and exploring the `KNN` algorithm, we decided to try using `Singular Value Decomposition (SVD)` algorithm, in the hopes that it would improve the `accuracy` of our model and lower the `RSME`. The `surprise` library uses a form of `SVD` called `Funk's SVD`, the premise behind it is a **matrix factorization-based model**. This means it *transforms* a **user-item matrix** (in our case, a *user-movie ratings matrix*)into latent factor matrices. It is also important to note that errors are *minimized* using `stochastic gradient descent`.  This means that both `regularization` and `learning rate` are `hyper-parameters` that we can tune. Number of `factors` and number of `epochs` are also `hyper-parameters` we tuned.
+After defining our `baseline_model` and exploring the `KNN` algorithm, we decided to try using `Singular Value Decomposition (SVD)` algorithm, in the hopes that it would improve the **accuracy** of our model and lower the **RSME**. The **surprise** library uses a form of `SVD` called **Funk's SVD**, the premise behind it is a **matrix factorization-based model**. This means it *transforms* a **user-item matrix** (in our case, a *user-movie ratings matrix*)into latent factor matrices. It is also important to note that errors are *minimized* using **stochastic gradient descent**.  This means that both `regularization` and `learning rate` are **hyper-parameters** that we can tune. Number of `factors` and number of `epochs` are also **hyper-parameters** we tuned.
 
 - 'SVD model' RMSE score is: **0.861**
 
-The **final algorithm** we explored in the `surprise` Library was `Non-negative Matrix Factorization (NMF)`. The only difference between this algorithm and the previous algorithm `SVD` is that in `NMF`, a specific *step size* is set for the `stochastic gradient descent` process of `regularization`. This is done to ensure that all **user** and **item factors** are kept positive. While this model can be prone to **over-fitting**, this can be mitigated with steps to **reduce the dimensionality** of our **data/factors**. 
+The **final algorithm** we explored in the surprise Library was `Non-negative Matrix Factorization (NMF)`. The only difference between this algorithm and the previous algorithm `SVD` is that in `NMF`, a specific *step size* is set for the stochastic gradient descent process of `regularization`. This is done to ensure that all **user** and **item factors** are kept positive. While this model can be prone to **over-fitting**, this can be mitigated with steps to **reduce the dimensionality** of our **data/factors**. 
 
 - 'NMF Model' RMSE score is: **0.936**
 
-When we compare the **best model** with *each different* algorithm explored, with `hyper-parameters` tuned to *optimize*, we found that our **best model** using `SVD` is the model which exhibits the *lowest* `RSME` in `cross validation`. Therefore that is the model we have determined to be our **final model**.
+When we compare the **best model** with *each different* algorithm explored, with hyper-parameters tuned to *optimize*, we found that our **best model** using `SVD` is the model which exhibits the *lowest* **RSME** in **cross validation**. Therefore that is the model we have determined to be our **final model**.
 
 ## Results
 ![img](./images/model_performance.png)
 
-When we compare the **best model** with *each different* algorithm explored, with `hyper-parameters` tuned to *optimize*, we found that our **best model** using `SVD` is the model which exhibits the *lowest* `RSME` in `cross validation`. Therefore that is the model we have determined to be our **final model**.
+When we compare the **best model** with *each different* algorithm explored, with **hyper-parameters** tuned to *optimize*, we found that our **best model** using `SVD` is the model which exhibits the *lowest* **RSME** in **cross validation**. Therefore that is the model we have determined to be our **final model**.
 
 ## Recommendations 
 
