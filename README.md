@@ -1,6 +1,8 @@
 # Recomender System
+--
 ![img](./images/Hulu_Banner.jpeg) 
 ### Authors
+--
 - Jawwad Siddiqui:
 [LinkedIn](https://www.linkedin.com/in/jsiddiqui85/) |
 [GitHub](https://github.com/jsiddiqui85) |
@@ -23,19 +25,22 @@
 [Email](zach.rauch0@gmail.com)
 
 ## Overview
+--
 
 ## Data and Methodology
-
+--
 
 ## Results
-
+--
 
 ## Next Steps
-
+--
 
 ## Conclusion
+--
 
 ## Repository Structure
+--
 ```
 ├── Workspace  
 │     ├── Jawwad
@@ -54,3 +59,10 @@
 ```
 
 ## Citations:
+--
+Images:
+- https://streamingwars.com/whats-leaving-hulu-this-week-from-50-first-dates-to-rambo/
+- https://towardsdatascience.com/recommendation-system-series-part-1-an-executive-guide-to-building-recommendation-system-608f83e2630a
+--
+Code References:
+- https://github.com/danielburdeno/Kindle-eBook-Recommendations
