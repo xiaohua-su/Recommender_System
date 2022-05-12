@@ -53,8 +53,9 @@
 ├── .gitignore
 ├── LICENSE
 ├── README.md
+├── Recommendation_System.ipynb
 ├── app.py
-├── environmentmac.yml
+├── mac_streamlit.yml.yml
 └── windows_streamlit.yml
 ```
 
