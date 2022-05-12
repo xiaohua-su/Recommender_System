@@ -15,12 +15,12 @@ genre = st.multiselect("Movie Genre",
 
 num_recs = st.number_input("How many recommendations would you like?", min_value=1, max_value=10)
 
-f=open('./ml-latest-small/final_fitted_model.sav', 'rb')
+f=open('./data/final_fitted_model.sav', 'rb')
 final_model=pickle.load(f)
 f.close()
 
-users_movies_seen = pd.read_csv('./ml-latest-small/users_movies_seen.csv',index_col='userId')
-movies = pd.read_csv('./ml-latest-small/movies_cleaned.csv', index_col=0)
+users_movies_seen = pd.read_csv('./data/users_movies_seen.csv',index_col='userId')
+movies = pd.read_csv('./data/movies_cleaned.csv', index_col=0)
 
 def recommender2(user,genre,num_recs):
     #using the train data
