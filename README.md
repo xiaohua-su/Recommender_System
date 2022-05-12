@@ -83,13 +83,17 @@ Based on the *performance of our model* we recommend it can be used in the follo
 
 ## Next Steps
 
-1. Since tastes in **movies** and **TV shows** change so much over time, gathering **more current data**,  would be a *crucial* next step in development . We can also improve our recommendation system by using data native to Hulu because we can gain a better understanding of the preferences of *Hulu-specific users* as opposed to users in general.
+1. Use more **current data** (our data set is from the 1996-2018), since tastes in movies and TV shows change so much over time, this would be a crucial next step in developing our *improving* our recommendation system model performance.
 
-2. We chose to train our model on the *smaller data set*. Ideally we would train the model on the *bigger data set*, we also want to incorporate **tv show ratings** for more holistic recommendations.
+2. Use more **first party data** ( or dataset is from MovieLens), by using data native to Hulu we can gain a better understanding of the preferences of Hulu-specific users as opposed to users in general.
 
-3. Furthermore, we would also like incorporate a *content based filtering system* into our model to provide more accurate, robust predictions.
+3. Use **more ratings**, we chose to use the smaller dataset in our analysis because of time constraints. We could have chosen to use the bigger set however we decided not to. This analysis should be re-done with more data.
 
-4. Finally, we would build a **second version** of our app with our *re-trained model*.
+4. Incorporate a **content based filtering algorithm** to address cold start problem
+
+5. We would do **A/B testing** on the res system and subscriber retention
+
+6. Build the second version of our app
 
 ## Repository Structure
 
