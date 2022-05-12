@@ -32,13 +32,13 @@ dependencies:
   - six=1.16.0
   - sqlite=3.38.3
   - tk=8.6.11
-  - vc=14.2
-  - vs2015_runtime=14.27.29016
   - wheel=0.37.1
-  - wincertstore=0.2
   - xz=5.2.5
   - zlib=1.2.12
   - pip:
+    - vs2015_runtime=14.27.29016
+    - wincertstore=0.2
+    - vc=14.2
     - altair==4.2.0
     - argon2-cffi==21.3.0
     - argon2-cffi-bindings==21.2.0
