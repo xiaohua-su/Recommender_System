@@ -70,16 +70,26 @@ When we compare the **best model** with *each different* algorithm explored, wit
 ## Results
 ![img](./images/model_performance.png)
 
+When we compare the **best model** with *each different* algorithm explored, with `hyper-parameters` tuned to *optimize*, we found that our **best model** using `SVD` is the model which exhibits the *lowest* `RSME` in `cross validation`. Therefore that is the model we have determined to be our **final model**.
+
 ## Recommendations 
 
+Based on the *performance of our model* we recommend it can be used in the following ways: 
 
-
+ 1. Use our model to predict **rating of movies** that the user hasn't rated by looking at the **ratings** for those movies done by **similar users**.
+ 2. Use these **predicted ratings** as the basis for providing **recommendations** to users using the **app version** of our deployed recommendation system.
+ 3. Use the **app version** to filter based recommendations based on `genre`, including the movies that have *more than one* `genre` tied to it. 
+ 4. Use this as the basis to increase interest in films vs TV shows 
 
 ## Next Steps
 
+1. Since tastes in **movies** and **TV shows** change so much over time, gathering **more current data**,  would be a *crucial* next step in development . We can also improve our recommendation system by using data native to Hulu because we can gain a better understanding of the preferences of *Hulu-specific users* as opposed to users in general.
 
-## Conclusion
+2. We chose to train our model on the *smaller data set*. Ideally we would train the model on the *bigger data set*, we also want to incorporate **tv show ratings** for more holistic recommendations.
 
+3. Furthermore, we would also like incorporate a *content based filtering system* into our model to provide more accurate, robust predictions.
+
+4. Finally, we would build a **second version** of our app with our *re-trained model*.
 
 ## Repository Structure
 
