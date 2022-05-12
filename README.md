@@ -1,8 +1,8 @@
 # Recomender System
---
+
 ![img](./images/Hulu_Banner.jpeg) 
 ### Authors
---
+
 - Jawwad Siddiqui:
 [LinkedIn](https://www.linkedin.com/in/jsiddiqui85/) |
 [GitHub](https://github.com/jsiddiqui85) |
@@ -25,22 +25,22 @@
 [Email](zach.rauch0@gmail.com)
 
 ## Overview
---
+
 
 ## Data and Methodology
---
+
 
 ## Results
---
+
 
 ## Next Steps
---
+
 
 ## Conclusion
---
+
 
 ## Repository Structure
---
+
 ```
 ├── Workspace  
 │     ├── Jawwad
