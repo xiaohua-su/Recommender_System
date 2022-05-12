@@ -63,6 +63,6 @@
 Images:
 - https://streamingwars.com/whats-leaving-hulu-this-week-from-50-first-dates-to-rambo/
 - https://towardsdatascience.com/recommendation-system-series-part-1-an-executive-guide-to-building-recommendation-system-608f83e2630a
---
+
 Code References:
 - https://github.com/danielburdeno/Kindle-eBook-Recommendations
