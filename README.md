@@ -1,5 +1,5 @@
 # Recomender System
-![img](./images/Hulu_Banner.jpeg)
+![img](./images/Hulu_Banner.jpeg) 
 ### Authors
 - Jawwad Siddiqui:
 [LinkedIn](https://www.linkedin.com/in/jsiddiqui85/) |
