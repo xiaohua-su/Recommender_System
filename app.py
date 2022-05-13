@@ -3,9 +3,9 @@ import pandas as pd
 import pickle
 import surprise
 
-st.title("Stuff Recommender")
+st.title("Butter Chicken and Stuff")
 
-st.write("## This is a real app for stuff!")
+st.write("## This app is a movie recommendation system based off of collaborative filtering.")
 
 user = st.number_input("What is your UserID?", min_value=1, max_value=610)
 
