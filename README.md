@@ -85,6 +85,8 @@ Based on the *performance of our model* we recommend it can be used in the follo
 
 An app was created based on this model. The app.py contains the code necessary to get the recommendation app to work on a local device. The mac_streamlit.yml and windows_streamlit.yml files contains the environment that is required to run this app locally for a mac or a windows. The requirements.txt file contains the information needed to run the recommendation app on the streamlit website.
 
+[DEMO APP](https://share.streamlit.io/xiaohua-su/recommender_system/main/app.py)
+
 ## Next Steps
 
 1. Use more **current data** (our data set is from the 1996-2018), since tastes in movies and TV shows change so much over time, this would be a crucial next step in developing our *improving* our recommendation system model performance.
