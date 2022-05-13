@@ -1,4 +1,4 @@
-# Recomender System
+# Recommender System
 
 ![img](./images/Hulu_Banner.jpeg) 
 ### Authors
