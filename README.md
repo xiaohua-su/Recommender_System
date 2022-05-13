@@ -129,8 +129,11 @@ An app was created based on this model. The app.py contains the code necessary t
 ## Citations:
 
 Images:
--[Hulu](https://streamingwars.com/whats-leaving-hulu-this-week-from-50-first-dates-to-rambo/)
--[Recommender_System](https://towardsdatascience.com/recommendation-system-series-part-1-an-executive-guide-to-building-recommendation-system-608f83e2630a)
+
+- [Hulu](https://streamingwars.com/whats-leaving-hulu-this-week-from-50-first-dates-to-rambo/)
+
+- [Recommender_System](https://towardsdatascience.com/recommendation-system-series-part-1-an-executive-guide-to-building-recommendation-system-608f83e2630a)
+
 - [statista](https://www.statista.com/statistics/496011/usa-svod-to-tv-streaming-usage/#:~:text=According%20to%20a%20recent%20survey,entering%20the%20market%20last%20year)
 
 Code References:
