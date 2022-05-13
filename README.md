@@ -81,6 +81,10 @@ Based on the *performance of our model* we recommend it can be used in the follo
  3. Use the **app version** to filter based recommendations based on `genre`, including the movies that have *more than one* `genre` tied to it. 
  4. Use this as the basis to increase interest in films vs TV shows 
 
+## App Deployment
+
+An app was created this model. In the app.py contains the code necessary to get the recommendation app to work on a local device. The mac_streamlit.yml and windows_streamlit.yml files contains the environment that is required to run this app locally for a mac or a windows. The requirements.txt file contains the information needed to run the recommendation app on the streamlit website.
+
 ## Next Steps
 
 1. Use more **current data** (our data set is from the 1996-2018), since tastes in movies and TV shows change so much over time, this would be a crucial next step in developing our *improving* our recommendation system model performance.
