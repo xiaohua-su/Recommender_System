@@ -101,6 +101,11 @@ An app was created based on this model. The app.py contains the code necessary t
 
 6. Build the second version of our app
 
+## Direct Links
+
+- [Project Presentation](https://github.com/xiaohua-su/Recommender_System/blob/ec34bb0f15e2d288b500fdb9c7b69356b04918cf/presentation.pdf) 
+- [Final Notebook](https://github.com/xiaohua-su/Recommender_System/blob/ec34bb0f15e2d288b500fdb9c7b69356b04918cf/Recommendation_Sytstem.ipynb) 
+
 ## Repository Structure
 
 ```
