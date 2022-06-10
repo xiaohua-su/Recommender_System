@@ -97,7 +97,7 @@ An app was created based on this model. The app.py contains the code necessary t
 
 4. Incorporate a **content based filtering algorithm** to address cold start problem
 
-5. We would do **A/B testing** on the res system and subscriber retention
+5. We would do **A/B testing** on the recommender system and subscriber retention
 
 6. Build the second version of our app
 
