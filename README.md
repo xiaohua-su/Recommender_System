@@ -37,7 +37,7 @@ Currently, Hulu is *losing their customer base* to their competitors **HBO Max**
 
 ## Data and Methodology
 
-The data was gathered from **GroupLens.org** where the information within this dataset is from **IMDB** and **TMDB**.  The rating and movie information was captured between the years of **1996 and 2018**.  
+The data was gathered from [GroupLens.org](https://grouplens.org/datasets/movielens/latest/) where the information within this dataset is from **IMDB** and **TMDB**.  The rating and movie information was captured between the years of **1996 and 2018**.  
 
 The dataset has over **100,000 movie ratings** given by **610 different users** for about **9700 movies**. Each user had reviewed *aleast* **20 different movies**.  However, due to time constraints, our model was built off of **100,000 movie ratings** versus the **1.9 million** ratings that were available in the original dataset.
 
