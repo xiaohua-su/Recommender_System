@@ -9,3 +9,10 @@ __pycache__
 
 #Big Files
 data/Full_Data/ml-latest.zip
+data/Full_Data/ml-latest/genome-scores.csv
+data/Full_Data/ml-latest/genome-tags.csv
+data/Full_Data/ml-latest/links.csv
+data/Full_Data/ml-latest/movies.csv
+data/Full_Data/ml-latest/ratings.csv
+data/Full_Data/ml-latest/README.txt
+data/Full_Data/ml-latest/tags.csv
