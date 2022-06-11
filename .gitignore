@@ -6,3 +6,6 @@ __pycache__
 *.pytest_cache
 .gitattributes
  .ipynb_checkpoints/Juypter Notebook-checkpoint.ipynb
+
+#Big Files
+data/Full_Data/ml-latest.zip
