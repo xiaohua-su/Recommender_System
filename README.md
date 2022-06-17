@@ -1,4 +1,4 @@
-# Recommender System
+# Movie Recommender System
 
 ![img](./images/Hulu_Banner.jpeg) 
 ### Authors
